@@ -92,7 +92,7 @@ def init_config():
 
 def init_log():
 	handler = TimedRotatingFileHandler("/home/pi/lights.log",when="D",interval=1,backupCount=5)
-	logging.basicConfig(format='%(asctime)s %(message)s',filename="/home/pi/lights.log",level=logging.INFO,handlers=[handler])
+	logging.basicConfig(format='%(asctime)s %(message)s',level=logging.INFO,handlers=[handler])
 	
 
 	
